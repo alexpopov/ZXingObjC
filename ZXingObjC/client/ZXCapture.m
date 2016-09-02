@@ -513,7 +513,7 @@ didOutputSampleBuffer:(CMSampleBufferRef)sampleBuffer
   if (self.input) {
     [self.session addInput:self.input];
     if ([_session canSetSessionPreset: AVCaptureSessionPresetHigh]) {
-      _sessionPreset = AVCaptureSessionPresetHigh
+      _sessionPreset = AVCaptureSessionPresetHigh;
     } else {
       _sessionPreset = AVCaptureSessionPreset1280x720;
     }
